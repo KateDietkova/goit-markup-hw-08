@@ -9,20 +9,55 @@
 
     background-color: var(--background-hero);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../img/hero-img.jpg');
+            url('../img/hero-img-mobile480.jpg');
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
+    
+    
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-            background-image: url('../img/hero-img@2x-desktop-3200.jpg');
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../img/hero-img@2x-mobile960.jpg');
         }
     }
+
+
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../img/hero-img-tablet-768.jpg');
+
+        
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                & {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url('../img/hero-img@2x-tablet-1536.jpg');
+                }
+        }
+    }
+
+    
+    @media screen and (min-width: 769px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../img/hero-img.jpg');
+        
+        
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                & {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url('../img/hero-img@2x-desktop-3200.jpg');
+                }
+        }
+    }
+
+
 
 
     @media screen and (min-width: 768px) {
@@ -64,45 +99,3 @@
 }
 
 
-
-
-
-
-
-// For desktop
-
-// .section-hero {
-//     text-align: center;
-//     padding: 200px 0;
-
-//     max-width: 1600px;
-//     height: 600px;
-//     margin-left: auto;
-//     margin-right: auto;
-
-//     background-color: var(--background-hero);
-//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url('../img/hero-img.jpg');
-
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-
-// }
-
-
-
-// .section-hero__title {
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-bottom: 30px;
-//     width: 696px;
-
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-
-//     color: var(--primary-white-color);
-// }
