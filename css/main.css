@@ -520,13 +520,18 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
+  width: 100%;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+@media screen and (min-width: 480px) {
+  .section-hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section-hero__title {
