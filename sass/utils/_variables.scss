@@ -1,0 +1,45 @@
+:root {
+    // Adaptives
+    --desktop: 1200px;
+    --tablet: 768px;
+    --mobile: 480px;
+
+    // Fonts
+    --font-general: Roboto, sans-serif;
+    --font-logo: Raleway, sans-serif;
+
+    // Text colors
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --logo-text-color: #000000;
+
+    // Accent color
+    --accent-color: #2196f3;
+
+    // Background colors
+    --primary-white-color: #ffffff;
+    --secondary-white-color: rgb(255, 255, 255, 0.6);
+    --secondary-background: #f5f4fa;
+    --dark-background: #2f303a;
+    --background-hero: #c4c4c4;
+    --border-primary-color: #eeeeee;
+    --border-secondary-color: #ececec;
+    --opacity-background-color: rgba(47, 48, 58, 0.8);
+    --footer-link-background-color: rgba(255, 255, 255, 0.1);
+
+    // Icon color
+    --icon-color: #afb1b8;
+
+    // Backdrop and overlay colors
+    --backdrop-color: rgba(0, 0, 0, 0.2);
+    --overlay-background: rgba(33, 150, 243, 0.9);
+
+    // Button-active color
+    --button-active-color: #188CE8;
+
+    // Border color
+    --border-color-input: rgba(33, 33, 33, 0.2);
+
+    // Placeholder color
+    --placeholder-color: rgba(117, 117, 117, 0.5);
+}

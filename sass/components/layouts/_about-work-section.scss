@@ -1,0 +1,38 @@
+
+// This section doesn't have padding-top
+
+.doing-list {
+    @extend %list;
+    display: flex;
+}
+
+.doing-list__item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+.doing-list__title {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    background-color: var(--opacity-background-color);
+    color: var(--primary-white-color);
+
+}

@@ -1,0 +1,28 @@
+.page-footer {
+    background-color: var(--dark-background);
+    padding: 60px 0;
+}
+
+.page-footer__container {
+    @extend .container;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+
+.page-footer__tablet-box {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (max-width: 1199px) {
+        justify-content: space-around;
+        align-items: baseline;
+        margin-bottom: 60px;
+    }
+}
+
+

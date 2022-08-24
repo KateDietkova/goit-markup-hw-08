@@ -1,0 +1,74 @@
+.section {
+    padding: 60px 0;
+
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 30px;
+
+
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+}
+
+.section--no-padding-top {
+    @extend .section;
+    padding-top: 0;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.section--grey-background {
+    @extend .section;
+    background-color: var(--secondary-background);
+}
+
+
+
+
+
+
+
+
+// For desktop
+
+// .section {
+//     padding: 94px 0;
+
+// }
+
+// .section__title {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+
+//     margin-bottom: 50px;
+// }
+
+// .section--no-padding-top {
+//     @extend .section;
+//     padding-top: 0;
+// }
+
+// .section--grey-background {
+//     @extend .section;
+//     background-color: var(--secondary-background);
+// }
