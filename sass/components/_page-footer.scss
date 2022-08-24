@@ -16,6 +16,7 @@
 .page-footer__tablet-box {
     @media screen and (min-width: 768px) {
         display: flex;
+        align-items: baseline;
     }
 
     @media screen and (max-width: 1199px) {
