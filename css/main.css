@@ -250,13 +250,15 @@ img {
   transition: opacity 50ms cubic-bezier(0.4, 0, 0.2, 1) 300ms;
 }
 
+.page-header__menu-container {
+  width: 100%;
+}
 @media screen and (max-width: 767px) {
   .page-header__menu-container {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100%;
     min-height: 796px;
     padding: 48px 40px;
     background-color: var(--primary-white-color);
@@ -271,7 +273,6 @@ img {
   .page-header__menu-container {
     display: flex;
     padding-left: 93px;
-    width: 100%;
   }
 }
 
