@@ -5,7 +5,6 @@
 
 .page-header__container {
     @extend .container;
-
 }
 
 .page-header__nav {
@@ -16,13 +15,9 @@
     @media screen and (max-width: 767px) {
         justify-content: space-between;
     }
-    
 }
 
-
-
 .menu-button {
-
     @media screen and (max-width: 767px) {
         display: inline-flex;
         position: relative;
@@ -31,8 +26,8 @@
         padding: 0;
         width: 40px;
         height: 40px;
-    
-        background-color: transparent; 
+
+        background-color: transparent;
 
         cursor: pointer;
     }
@@ -40,16 +35,15 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
-
 }
-
 
 .menu-button__icon-cross {
     opacity: 0;
 
     .is-open & {
         opacity: 1;
-        transition: opacity 50ms cubic-bezier(0.4, 0, 0.2, 1) 300ms, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 50ms cubic-bezier(0.4, 0, 0.2, 1) 300ms,
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .menu-button:hover &,
@@ -58,9 +52,6 @@
     }
 }
 
-
-
-
 .menu-button__icon-menu {
     opacity: 1;
 
@@ -68,10 +59,7 @@
         opacity: 0;
         transition: opacity 50ms cubic-bezier(0.4, 0, 0.2, 1) 300ms;
     }
-
 }
-
-
 
 .page-header__menu-container {
     width: 100%;
@@ -91,17 +79,13 @@
         &.is-open {
             transform: translateX(0);
         }
-        
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
-        padding-left: 93px;
-    }    
-    
+        margin-left: 93px;
+    }
 }
-
-
 
 .site-nav {
     @extend %list;
@@ -123,9 +107,7 @@
     @media screen and (min-width: 768px) {
         margin-right: 50px;
     }
-
 }
-
 
 .site-nav__link {
     @extend %link;
@@ -137,15 +119,13 @@
     letter-spacing: 0.02em;
 
     text-decoration: none;
-    
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    
+
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
-
 
     @media screen and (min-width: 768px) {
         padding-top: 32px;
@@ -154,10 +134,7 @@
         font-size: 14px;
         line-height: 1.14;
     }
-
 }
-
-
 
 .site-nav__link--current {
     color: var(--accent-color);
@@ -166,25 +143,21 @@
         position: relative;
 
         &::after {
-            content: "";
+            content: '';
             display: inline-block;
-    
+
             position: absolute;
             left: 0;
             bottom: -1px;
-    
+
             width: 100%;
             height: 4px;
             border-radius: 2px;
-    
+
             background-color: var(--accent-color);
         }
     }
-
 }
-
-
-
 
 .contacts {
     @extend %list;
@@ -199,12 +172,10 @@
         margin-left: auto;
     }
 
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         flex-direction: column;
         justify-content: center;
     }
-    
-
 }
 
 .contacts__item {
@@ -246,36 +217,31 @@
         color: var(--accent-color);
     }
 
-   @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: inline-flex;
         align-items: center;
-    
-        font-size: 12px;
-   }
 
-   @media screen and (min-width: 1200px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
         padding-top: 32px;
         padding-bottom: 32px;
-    
+
         font-size: 14px;
         line-height: 1.14;
-   }
-
-
+    }
 }
-
 
 .contacts__link--bigger {
     @media screen and (max-width: 767px) {
         font-size: 34px;
         line-height: 1.17;
+        color: var(--accent-color);
     }
 }
 
-
-
 .contacts__icon {
-
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -285,8 +251,6 @@
         fill: currentColor;
     }
 }
-
-
 
 .menu-networks {
     @extend %list;
@@ -304,14 +268,13 @@
 .menu-networks__item {
     @extend %link;
     position: relative;
-    
 
     &:not(:last-child) {
         margin-right: 20px;
     }
 
     &:not(:last-child)::after {
-        content: "";
+        content: '';
         display: inline-block;
         width: 1px;
         height: 100%;
@@ -320,8 +283,6 @@
 
         background-color: var(--border-color-input);
     }
-
-
 }
 
 .menu-networks__link {
@@ -333,8 +294,6 @@
     letter-spacing: 0.02em;
     padding-top: 5px;
     padding-bottom: 5px;
-    
+
     text-decoration: none;
 }
-
-
